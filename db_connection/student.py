@@ -85,7 +85,39 @@ print("table created!")
 # print(row)
 
     
-#update , delete and sorting 
+#update
+# newid = int(input("Enter the id you want to update: "))
+# newname=input("Enter the new name: ")
+# newage = input("Enter the new age: ")
+# cursor.execute("""
+#     UPDATE student
+#     SET name=?,age=?
+#     WHERE id=?;
+# """,(newname,newage,newid))     #execute have two arg only and also values in tuple should be according to pattern of placeholders
+# conn.commit()
+# print("Data updated")
+
+
+# delete
+# newid = int(input("Enter the id you want to delete: "))
+# cursor.execute("""
+#     DELETE FROM student 
+#     WHERE id = ?;
+# """,(newid,))     
+# conn.commit()
+# print("Data Deleted!")
+
+#sorting
+# order = input("Enter the order in which you want to sort (ASC/DESC): ")
+# col = input("Enter the column name according to which you want to sort: ")
+# cursor.execute(f"SELECT * FROM student ORDER BY {col} {order};")   
+# #you cannot pass ? this placeholer for val is want to pass col using string {} no need to pass tuple 
+# #Use ? for DATA/VALUES. Use a string/f-string for SQL structure such as column names or keywords.
+# # for select use fetchall and run a loop to print all rows
+# rows  = cursor.fetchall()
+# for row in rows:
+#     print(row)
+# print("Data sorted!")
 
 
     
