@@ -98,6 +98,23 @@ print("table created!")
 # print("Data updated")
 
 
+#with validation
+# flag = False
+# uid = int(input("Enter the id to update:  "))
+# cursor.execute("select * from student")
+# rows = cursor.fetchall()
+# for i in rows:
+#     if i[0]==uid:
+#         newname = input("Enter the new name: ")
+#         cursor.execute("update student set name=? where id=?",(newname,uid))
+#         conn.commit()
+#         print("data updated")
+#         flag = True
+#         break
+# if flag==False:
+#     print("No records found!")
+
+
 # delete
 # newid = int(input("Enter the id you want to delete: "))
 # cursor.execute("""
@@ -106,6 +123,23 @@ print("table created!")
 # """,(newid,))     
 # conn.commit()
 # print("Data Deleted!")
+
+
+# with validation
+# flag = False
+# uid = int(input("Enter the id to delete: "))
+# cursor.execute("select * from student")
+# rows = cursor.fetchall()
+# for i in rows:
+#     if i[0]==uid:
+#         cursor.execute("DELETE FROM student WHERE id=?",(uid,))
+#         conn.commit()
+#         print("Data deleted!")
+#         flag = True
+#         break
+# if flag==False:
+#     print("No records found!")
+
 
 #sorting
 # order = input("Enter the order in which you want to sort (ASC/DESC): ")
@@ -116,7 +150,7 @@ print("table created!")
 # # for select use fetchall and run a loop to print all rows
 # rows  = cursor.fetchall()
 # for row in rows:
-#     print(row)
+#     print(row)              #can pass index for particular data you want ex for id -> row[0]
 # print("Data sorted!")
 
 
