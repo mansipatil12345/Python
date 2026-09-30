@@ -1,21 +1,22 @@
-import sqlite3;
+# import sqlite3;
 
-#all methods from db is stored in conn
-conn = sqlite3.connect("python46.db")
-print("db created")
+# #all methods from db is stored in conn
+# conn = sqlite3.connect("python46.db")
+# print("db created")
 
-#entire refrence is stored 
-cursor = conn.cursor()
+# #entire refrence is stored 
+# cursor = conn.cursor()
 
-#call execute -> table create
-cursor.execute("""
-    create table if not exists student(
-        id INTEGER primary key,
-        name TEXT not null,
-        age INTEGER
-    )
-    """)
-print("table created!")
+#execute -> return type is tuple and execute many return type is list
+# #call execute -> table create
+# cursor.execute("""
+#     create table if not exists student(
+#         id INTEGER primary key,
+#         name TEXT not null,
+#         age INTEGER
+#     )
+#     """)
+# print("table created!")
 
 #insert op-static one 
 # cursor.execute("INSERT INTO student(id,name,age) VALUES(?,?,?)",(1,'Ram',23))
@@ -154,7 +155,12 @@ print("table created!")
 # print("Data sorted!")
 
 
-    
+#calling of function can be 1. direct or 2. indirect 
+# 1. direct -> direct name calling for function with no arg or no return type
+# 2. indirect -> if function return value so store in varible and print it or directly pass in print 
+
+
+
 
 
 

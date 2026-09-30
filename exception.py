@@ -70,16 +70,26 @@
 # print("i am alays execute")
 
 
-#custome exception
-class MyException(Exception):
-    pass
-if(2>1):
-    raise MyException("hi i m exception")
+#custom exception
+# class MyException(Exception):
+#     pass
+# if(2>1):
+#     raise MyException("hi i m exception")
 
 
-class pwdnotmatcherror(Exception):
-    pass
-if(123==1234):
-    print("pass matched")
-else:
-    raise pwdnotmatcherror("pwd not matched")
+# class pwdnotmatcherror(Exception):
+#     pass
+# if(123==1234):
+#     print("pass matched")
+# else:
+#     raise pwdnotmatcherror("pwd not matched")
+
+# class pwdnotmatcherror(Exception):
+#     pass
+# try:
+#  if(123==1234):
+#     print("pass matched")
+# else:
+#     raise pwdnotmatcherror("pwd not matched")
+
+#complete codes pending one and check also
